@@ -1,0 +1,120 @@
+.why-wrapper {
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  background: url("/why.jpg") no-repeat center center / cover;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+.why-wrapper.rtl {
+  direction: rtl;
+  font-family: "Tajawal",  sans-serif;
+}
+
+.desert-stamp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  opacity: 0.05;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.why-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.why-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 70px;
+  color: #209EBA;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px; /* Increased from 30px to 50px */
+  align-items: start; /* For stagger effect */
+}
+
+.why-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 40px 25px; /* Slightly increased padding */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+/* Stagger effect */
+.why-card:nth-child(1),
+.why-card:nth-child(3) {
+  margin-top: -20px;
+}
+
+.why-card:nth-child(2) {
+  margin-top: 20px;
+}
+
+/* Different background colors for each card */
+.why-card:nth-child(1) {
+  background: #fff;
+}
+
+.why-card:nth-child(2) {
+  background: #209EBA;
+  color: #fff;
+}
+
+.why-card:nth-child(2) .why-card-title,
+.why-card:nth-child(2) .why-card-desc {
+  color: #fff;
+}
+
+.why-card:nth-child(3) {
+  background: #fff;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.why-icon {
+  margin-bottom: 15px;
+  color: #003851;
+}
+
+.why-card:nth-child(2) .why-icon {
+  color: #fff;
+}
+
+.why-card-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #002F46;
+}
+
+.why-card-desc {
+  font-size: 1rem;
+  color: #209EBA;
+  line-height: 1.5;
+}
+
+/* Make it normal on mobile */
+@media (max-width: 768px) {
+  .why-card:nth-child(1),
+  .why-card:nth-child(2),
+  .why-card:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .why-grid {
+    gap: 30px; /* Slightly less on mobile for better fit */
+  }
+}

@@ -1,0 +1,115 @@
+.footer {
+  background: url("/footer.jpg") no-repeat center center / cover;
+  color: white;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  
+  font-family: "Tajawal",  sans-serif;
+  padding: 40px 60px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer-left h2 {
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.footer-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.watch-video {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.choose-forest {
+  background: white;
+  color: #1e4032;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.choose-forest:hover {
+  background: #cce5d2;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 6px;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.footer.rtl {
+  direction: rtl;
+  text-align: right;
+}

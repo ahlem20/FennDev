@@ -1,0 +1,89 @@
+.methodology {
+  padding: 80px 20px;
+  background: #fff;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* RTL Support */
+.methodology.rtl {
+  direction: rtl;
+  text-align: right;
+  font-family: "Tajawal", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.methodology-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.methodology-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #002F46; /* Updated title color */
+  margin-bottom: 15px;
+}
+
+.methodology-text p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.methodology-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.methodology-text ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.methodology-text ul li h3 {
+  font-size: 18px;
+  color: #1F9DBB;
+  margin-bottom: 5px;
+}
+
+.methodology-text ul li p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.methodology-text .icon {
+  font-size: 22px;
+  color: #002F46; /* blue accent */
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.methodology-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .methodology-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .methodology-text ul li {
+    justify-content: center;
+    text-align: left;
+  }
+
+  /* Arabic mobile fix */
+  .methodology.rtl .methodology-text ul li {
+    text-align: right;
+    justify-content: flex-end;
+  }
+}

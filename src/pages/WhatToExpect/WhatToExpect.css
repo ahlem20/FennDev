@@ -1,0 +1,79 @@
+.expect-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/bg1.jpg") no-repeat center center / cover;
+  padding: 40px;
+  font-family: "Roboto", "Cairo", sans-serif;
+  color: white;
+}
+
+.expect-container {
+  background: #033047a8;
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 50px;
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.expect-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fcb614;
+}
+
+.expect-container .intro {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.step-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.step-card h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #ffb347;
+}
+
+.step-card p {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* RTL support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .expect-container {
+    padding: 30px;
+  }
+  .expect-container h1 {
+    font-size: 32px;
+  }
+}
