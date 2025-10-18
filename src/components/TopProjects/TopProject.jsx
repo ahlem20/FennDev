@@ -101,7 +101,7 @@ export default function Projects({ lang, isAvailable = false }) {
           ))}
         </div>
       ) : (
-        <div className="coming-soon">
+        <div className="coming-soonn">
           <p>{t.comingSoon}</p>
         </div>
       )}
