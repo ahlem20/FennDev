@@ -81,13 +81,17 @@
   background: #15748a;
 }
 
-/* Coming Soon Placeholder */
-.coming-soon {
+/* Coming Soon Placeholder */.coming-soonn {
   text-align: center;
-  font-size: 1.2rem;
+  padding: 100px 20px;
   color: #002F46;
-  padding: 40px 0;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  margin: 60px auto;
+  max-width: 600px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 /* RTL Support */
