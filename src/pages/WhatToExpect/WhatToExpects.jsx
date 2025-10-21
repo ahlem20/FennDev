@@ -5,7 +5,7 @@ function WhatToExpects({ lang }) {
   const translations = {
     en: {
       title: "What to Expect",
-      intro: "At Fenncode, we guide you from idea to launch with clarity and transparency.",
+      intro: "At FennDev, we guide you from idea to launch with clarity and transparency.",
       steps: [
         { title: "Consultation", desc: "We discuss your needs and goals to shape the project scope." },
         { title: "Design", desc: "Our team creates user-friendly and modern designs." },
@@ -15,7 +15,7 @@ function WhatToExpects({ lang }) {
     },
     fr: {
       title: "À quoi s’attendre",
-      intro: "Chez Fenncode, nous vous guidons de l’idée au lancement avec clarté et transparence.",
+      intro: "Chez FennDev, nous vous guidons de l’idée au lancement avec clarté et transparence.",
       steps: [
         { title: "Consultation", desc: "Nous discutons de vos besoins et objectifs pour définir le projet." },
         { title: "Conception", desc: "Notre équipe crée des designs modernes et intuitifs." },
@@ -25,7 +25,7 @@ function WhatToExpects({ lang }) {
     },
     ar: {
       title: "بماذا نعدك",
-      intro: "في Fenncode نرافقك من الفكرة حتى الإطلاق بوضوح وشفافية.",
+      intro: "في FennDev نرافقك من الفكرة حتى الإطلاق بوضوح وشفافية.",
       steps: [
         { title: "الاستشارة", desc: "نناقش احتياجاتك وأهدافك لرسم ملامح المشروع." },
         { title: "التصميم", desc: "نبدع تصاميم حديثة وسهلة الاستخدام." },
