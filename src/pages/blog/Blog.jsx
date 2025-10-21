@@ -5,7 +5,7 @@ export default function Blog({ lang, setLang }) {
   const translations = {
     en: {
       title: "Our Blog",
-      subtitle: "Insights, tips, and stories from Fenncode.",
+      subtitle: "Insights, tips, and stories from FennDev.",
       featured: {
         title: "The Future of Cloud Apps",
         excerpt: "Cloud-native applications are reshaping how businesses scale.",
@@ -28,7 +28,7 @@ export default function Blog({ lang, setLang }) {
     },
     fr: {
       title: "Notre Blog",
-      subtitle: "Aperçus, conseils et histoires de Fenncode.",
+      subtitle: "Aperçus, conseils et histoires de FennDev.",
       featured: {
         title: "L'avenir des applications cloud",
         excerpt: "Les applications cloud-native transforment les entreprises.",
@@ -51,7 +51,7 @@ export default function Blog({ lang, setLang }) {
     },
     ar: {
       title: "مدوّنتنا",
-      subtitle: "رؤى ونصائح وقصص من Fenncode.",
+      subtitle: "رؤى ونصائح وقصص من FennDev.",
       featured: {
         title: "مستقبل تطبيقات السحابة",
         excerpt: "التطبيقات السحابية تغيّر طريقة تطوّر الشركات.",
