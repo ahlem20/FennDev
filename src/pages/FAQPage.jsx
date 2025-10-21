@@ -11,9 +11,9 @@ export default function FAQPage({ lang, setLang }) {
       title: "Frequently Asked Questions",
       faqs: [
         {
-          question: "What is Fenncode?",
+          question: "What is FennDev?",
           answer:
-            "Fenncode is a software development company focused on building modern, scalable, and user-friendly applications.",
+            "FennDev is a software development company focused on building modern, scalable, and user-friendly applications.",
         },
         {
           question: "Do you provide custom software solutions?",
@@ -37,9 +37,9 @@ export default function FAQPage({ lang, setLang }) {
       title: "Questions Fréquemment Posées",
       faqs: [
         {
-          question: "Qu'est-ce que Fenncode ?",
+          question: "Qu'est-ce que FennDev ?",
           answer:
-            "Fenncode est une société de développement logiciel spécialisée dans la création d'applications modernes, évolutives et conviviales.",
+            "FennDev est une société de développement logiciel spécialisée dans la création d'applications modernes, évolutives et conviviales.",
         },
         {
           question: "Fournissez-vous des solutions logicielles personnalisées ?",
@@ -63,9 +63,9 @@ export default function FAQPage({ lang, setLang }) {
       title: "الأسئلة الشائعة",
       faqs: [
         {
-          question: "ما هي Fenncode؟",
+          question: "ما هي FennDev؟",
           answer:
-            "Fenncode هي شركة تطوير برمجيات تركز على بناء تطبيقات حديثة وقابلة للتطوير وسهلة الاستخدام.",
+            "FennDev هي شركة تطوير برمجيات تركز على بناء تطبيقات حديثة وقابلة للتطوير وسهلة الاستخدام.",
         },
         {
           question: "هل تقدمون حلول برمجية مخصصة؟",
