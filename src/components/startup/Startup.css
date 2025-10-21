@@ -123,8 +123,7 @@
   background: #FCB614;
   box-shadow: 0 8px 30px rgba(0, 47, 70, 0.25);
 }
-
-/* RTL Support */
+/* RTL Fixes */
 .rtl {
   direction: rtl;
   text-align: right;
@@ -136,6 +135,22 @@
 
 .rtl .startup-card {
   text-align: right;
+}
+
+.rtl .icon-wrapper {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Optional: reverse hover direction for RTL */
+.rtl .startup-card:hover {
+  transform: translateY(-8px) translateX(-3px);
+}
+
+/* Font fallback for Arabic */
+.rtl * {
+  font-family: "Tajawal", "Cairo", "Poppins", sans-serif;
 }
 
 /* Responsive */
