@@ -4,7 +4,7 @@ import {
   FaGlobe,
   FaBolt,
   FaChartLine,
-} from "react-icons/fa"; // replaced emojis with icons
+} from "react-icons/fa";
 import "./Startup.css";
 
 const translations = {
@@ -99,13 +99,14 @@ const translations = {
   },
 };
 
-const Startup = ({ lang }) => {
+const Startup = ({ lang = "en" }) => {
   const t = translations[lang] || translations.en;
+  const rtl = lang === "ar";
 
   return (
     <section
-      className={`startup-section ${lang === "ar" ? "rtl" : ""}`}
-      dir={lang === "ar" ? "rtl" : "ltr"}
+      className={`startup-section ${rtl ? "rtl" : ""}`}
+      dir={rtl ? "rtl" : "ltr"}
     >
       <div className="startup-header">
         <h1>{t.title}</h1>
@@ -114,9 +115,9 @@ const Startup = ({ lang }) => {
       </div>
 
       <div className="startup-cards">
-        {t.cards.map((card, index) => (
-          <div className="startup-card" key={index}>
-            {card.icon}
+        {t.cards.map((card, i) => (
+          <div className="startup-card" key={i}>
+            <div className="icon-wrapper">{card.icon}</div>
             <h3>{card.title}</h3>
             <p>{card.text}</p>
           </div>
